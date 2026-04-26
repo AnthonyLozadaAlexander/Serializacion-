@@ -22,9 +22,7 @@ public class Main {
         try {
             FileInputStream fileIn = new FileInputStream("UsuarioInfo.ser"); // archivo
             ObjectInputStream in = new ObjectInputStream(fileIn); // permite leer objetos completos del archivo
-            
-            user = (Usuario) in.readObject(); // <--- ASI DE SIMPLE DEBE SER
-            
+            user = (Usuario) in.readObject(); // ASI DE SIMPLE DEBE SER, SOLO LEER EL OBJETO Y CASTEARLO A SU TIPO ORIGINAL
             in.close(); // Cerrar ObjectIn para ahorrar Recursos
             fileIn.close(); // Cerrar FileIn para ahorrar Recursos
         } catch (IOException e) {

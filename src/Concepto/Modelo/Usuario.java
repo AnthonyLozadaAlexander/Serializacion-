@@ -2,7 +2,7 @@ package Concepto.Modelo;
 
 import java.io.Serializable;
 
-final class Usuario implements Serializable {
+public class Usuario implements Serializable {
     public String nombre;
     public String contraseña;
     private static final long serialVersionUID = 1L; // Esto es para asegurar que la clase sea compatible con la version de serializacion, no es obligatorio pero recomendado
